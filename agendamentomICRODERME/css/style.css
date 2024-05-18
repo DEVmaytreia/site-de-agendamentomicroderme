@@ -1,0 +1,747 @@
+:root {
+    --color-primary: #e087c9ee;
+    --color-segundary: #5dcd88;
+    --color-primary-light: #ece0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.home {
+    position: relative;
+    background-image: url(../img/bg-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Ajustes para telas menores que 1200px */
+@media (max-width: 2000px) {
+    .home {
+        background-attachment: scroll; /* Altera para scroll em telas menores */
+        background-size: cover;
+    }
+}
+
+/* Ajustes para telas menores que 992px */
+@media (max-width: 992px) {
+    .home {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .home {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+
+/* Ajustes para telas menores que 576px */
+@media (max-width: 576px) {
+    .home {
+        background-attachment: scroll;
+        background-size: cover; /* Garante que a imagem cubra toda a área mesmo em telas pequenas */
+    }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    .home {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* Para telas pequenas (telefones) */
+@media (max-width: 1080px) {
+    .home {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        /* Ajustes adicionais para modo retrato */
+        padding: 20px; /* Exemplo de padding */
+        text-align: center; /* Centralizar o texto */
+    }
+
+}
+
+
+/* Para tablets em modo retrato */
+@media (min-width: 601px) and (max-width: 900px) {
+    .home {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+/* Para tablets em modo paisagem e telas maiores */
+@media (min-width: 901px) {
+    .home {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.header .nav .logo {
+    margin: 0 30px;
+}
+
+.home .banner {
+    position: relative;
+    width: 90%;
+    max-width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.home .banner span:first-child {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+.home .banner h1 {
+    font-size: 120px;
+}
+
+.slogan2 {
+    margin-bottom: 10px;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .timing {
+    position: relative;
+    margin-top: -50px;
+    width: 100%;
+    background-image: url(/img/brush-big.jpg);
+    padding: 20px;
+}
+
+.about .timing .overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+    margin-top: 10px;
+    width: 50px;
+}
+
+.about .timing h3 {
+    color: var(--color-primary);
+    font-size: 30px;
+    border-bottom: 2px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+}
+
+.about .timing .text {
+    margin: 10px 0;
+}
+
+.about .timing .text:after {
+    content: '•';
+    display: block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type::after {
+    content: '|';
+    display: block;
+}
+
+.about .timing .text h4 {
+    color: rgb(223, 223, 223);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+.about .experience {
+    margin: 50px 0;
+    width: 100%;
+    color: white;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.services {
+    background-color: var(--color-primary-light);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: var(--color-segundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.services .box h4 {
+    color: var(--color-segundary);
+    margin-top: 30px;
+}
+
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.appointment {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    background-image: url(/img/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.appointment h2 {
+    color: var(--color-primary-light);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.appointment img {
+    margin: 0 auto;
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointment .personal-data .input-wrapper {
+    width: 100%;
+}
+
+.appointment label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment textarea {
+    height: 100px;
+}
+
+.appointment button {
+    background-color: var(--color-segundary);
+    color: white;
+    padding: 15px 40px;
+    margin-top: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.gallery {
+    padding: 100px 0 0 0;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2 {
+    color: var(--color-segundary);
+    text-align: center;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    margin: 0 auto;
+}
+
+.gallery .gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens mudem de linha quando necessário */
+    justify-content: center; /* Centraliza os itens na linha */
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin: 6px;
+    flex: 1 1 calc(33.333% - 24px); /* Flex-grow, flex-shrink, flex-basis */
+    box-sizing: border-box; /* Inclui a borda e margem no cálculo do tamanho */
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
+
+.location {
+    padding: 100px 0;
+    background-image: url(/img/bg-location.jpg);
+    background-size: cover;
+}
+
+.location .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+}
+
+.location .head .info {
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 100%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.location .head .info span {
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info span:first-child {
+    color: silver;
+}
+
+.location .head .info span:last-child {
+    color: white;
+}
+
+.location .map {
+    width: 100%;
+}
+
+.location .map iframe {
+    width: 100%;
+}
+
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.card {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+}
+
+.info-container {
+    padding: 10px;
+}
+
+.info-container h4 {
+    margin-top: 0;
+}
+
+.info-container p {
+    margin-bottom: 0;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.card-small {
+    width: 100%;
+    max-width: 130px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.card-small .info-container {
+    padding: 10px;
+}
+
+.card-small .info-container h4 {
+    margin-top: 0;
+}
+
+.card-small .info-container p {
+    margin-bottom: 0;
+}
+
+.card-small .image-container {
+    text-align: center;
+}
+
+.card-small .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+}
+
+label[for="jotape"] {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #08f700;
+}
+
+/* Estilização para todos os campos de entrada de texto */
+.input-wrapper input[type="text"] {
+    border: 1px solid #ccc;   /* Borda leve */
+    border-radius: 20px;      /* Bordas arredondadas */
+    padding: 10px;            /* Espaço interno */
+    width: 100%;              /* Faz o input ocupar toda a largura do container */
+    transition: border 0.3s ease; /* Efeito suave ao interagir */
+}
+
+/* Quando o usuário passa o mouse sobre o campo de texto */
+.input-wrapper input[type="text"]:hover {
+    border-color: #888;  /* Cor de borda ao passar o mouse */
+}
+
+/* Quando o campo de texto está em foco */
+.input-wrapper input[type="text"]:focus {
+    outline: none;      /* Remove o contorno padrão do navegador */
+    border-color: #555; /* Cor de borda ao focar */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .about .container {
+        flex-direction: row;
+    }
+
+    .about .timing {
+        width: 33%;
+    }
+
+    .about .experience {
+        margin-left: 7%;
+        width: 66%;
+    }
+
+    .services .boxes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .appointment .personal-data {
+        flex-direction: row;
+    }
+
+    .appointment .personal-data .input-wrapper {
+        margin-right: 50px;
+    }
+
+    .appointment .personal-data .input-wrapper:last-of-type {
+        margin-right: 0;
+    }
+
+    .location .head {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .location .head .info {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    .home .banner h1 {
+        font-size: 100px;
+    }
+
+    .gallery .gallery-wrapper div {
+        flex: 1 1 calc(33.333% - 24px); /* Três itens por linha */
+    }
+
+    .services .box {
+        width: 30%;
+    }
+}
+button {
+  font-family: inherit;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #704106 0%,#3c2915 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+  transform: rotate(45deg);
+}
+
+/*texto nome*/
+
+.inp-border {
+    padding: 5px;
+    margin: 2em 1em;
+    border-radius: 50px;
+    max-width: 300px;
+  }
+  
+  .input {
+    text-align: center;
+    padding: 15px;
+    outline: none;
+    border: double 0;
+    background: #252525;
+    border-radius: 50px;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .a1 {
+    background: linear-gradient(
+      330.28deg,
+      #c900fc 100%,
+      #3f044e 100%,
+      #c900fc 100%
+    );
+  }
+  
+  .a1 > input {
+    color: #caab98;
+  }
+  
+  .a1 > input::placeholder {
+    color: #ff6e1d;
+    opacity: 0.6;
+  }
+  
+  .inp-border:focus-within {
+    background: linear-gradient(
+      330.28deg,
+      #2cfff2 0%,
+      #1e78ff 30.73%,
+      #ff54a6 55.73%,
+      #ff6e1d 79.17%,
+      #ff3e3e 100%
+    );
+  }
+  
+  .inp-border:hover {
+    background: linear-gradient(
+      330.28deg,
+      #2cfff2 0%,
+      #1e78ff 30.73%,
+      #ff54a6 55.73%,
+      #ff6e1d 79.17%,
+      #ff3e3e 100%
+    );
+  }
+  
+

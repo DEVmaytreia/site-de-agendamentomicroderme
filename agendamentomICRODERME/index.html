@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>agendamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section id="home" class="home">
+        <header class="header">
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#appointment">Agendamento</a>
+                    </li>
+                    <li>
+                        <a href="#location">Localização</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <h4>Profissionalismo e Exelência!<h4>
+            <span class="slogan2">O melhor lugar para cuidar da sua autoestima!</span>
+            <img src="img/much-img.png"
+                 alt="Foto Barber">
+         </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="timing">
+                <div class="overlay">
+                    <img src="/img/classic-cut.png" alt="foto" class="icon-cut">
+                    <h3>HORÁRIOS</h3>
+                    <div class="text">
+                        <h4>Segunda-feira á Sexta-feira</h4>
+                        <span>09:00 AM - 17:00 PM</span>
+                    </div>
+                    <div class="text">
+                        <h4>Sábado</h4>
+                        <span>09:00 AM - 14:00 PM</span>
+                    </div>
+                    <div class="text">
+                        <h4>Domingo</h4>
+                        <span>Fechado</span>
+                    </div>
+                    <br>
+                    <img src="/img/loc-ic.png" alt="localização">
+                    <span>Imperador -000</span>
+                    <br>
+                    <img src="/img/phone-ic.png" alt="Fone">
+                    <span>(91)9 8766-0757</span>
+                </div>
+            </div>
+            <div class="experience">
+                <span>Uma história única</span>
+                <h2>vários anos de experiêcia</h2>
+                <div class="text">
+                    <div>
+                        <p>
+                             A MUITO TEMPO FAZENDO TRANSFORMÇÕES, E DE APRIMORAMENTO!
+                        </p>
+                        <p>
+                            AQUI VOCÊ TEM PRIORIADE.
+                        </p>
+                        <p>
+                           VENHA, BASTA FAZER SEU AGENDAMENTO AGORA PELO SITE!!
+                        </p>
+                    </div>
+                    <img src="/img/shave-brush.jpg" alt="experiencia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <img src="/img/heading-ic.png" alt="classic">
+                <div class="box">
+                    <h4>Reustarando sua autoestima!</h4>
+                <div class="box">
+                    <img src="/img/head-line-ic.png" alt="icon">
+                    <p>A microderme é indicada para tratar rugas finas, manchas de idade, cicatrizes de acne e poros dilatados, além de melhorar a textura geral da pele. Por ser um método rápido e com tempo de recuperação mínimo, é uma excelente opção para quem busca resultados visíveis sem a necessidade de procedimentos mais agressivos. Ao incorporar a microderme na rotina de cuidados com a pele, é possível obter uma aparência mais jovem e radiante de forma segura e eficaz.
+                    </p>    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment"> 
+        <div class="container">
+            <h2>Faça um Agendamento</h2>
+            <img src="/img/heading-ic-white.png" alt="Faça um agendamento">
+            <div class="personal-data">
+                <div class="inp-border a1 input-wrapper">
+                    <label for="nome">Digite seu Nome</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome">
+                  </div>
+                  
+                
+                  <div class="inp-border a1 input-wrapper">
+                    <label for="data-hora">Data e Hora</label>
+                    <input type="datetime-local" id="data-hora" name="data-hora">
+                </div>
+
+                <div class="inp-border a1 input-wrapper">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="Digite seu telefone">
+                </div>
+ 
+            </div>
+            <br>
+            <h3>CONFIRME SEU AGENDAMENTO AQUI!</h3>
+            <div class="inp-border a1 input-wrapper">
+                <div class="info-container">
+                    <input type="checkbox" onclick="exibirDados()" id="jotape" name="jotape" value="cCenile Lima!">
+                    <label for="jotape"></label>
+                </div>
+                <h5>comfirmar agendamento</h5>
+            </div>
+            <div class="inp-border a1 input-wrapper">
+                <label>Mensagem</label>
+                <textarea id="mensagem"></textarea>
+                <button onclick="enviarParaWhatsapp()">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>enviar!</span>
+                  </button>
+                  
+    </section>
+    
+    <section id="gallery" class="gallery"> 
+        <div class="container">
+            <h2>Galeria de fotos</h2>
+  
+            <div class="gallery-wrapper">
+                <div>
+                    <img src="/img/gallery-img1.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="/img/gallery-img2.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="/img/gallery-img3.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="/img/gallery-img4.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="/img/gallery-img5.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="/img/gallery-img6.png" alt="galeria">
+                </div>
+                <div>
+                    <img src="/img/gallery-img7.png" alt="galeria">
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <section id="location" class="location">
+        <div class="container">
+            <div class="head">
+                <div class="info">
+                    <div class="icon">
+                        <img src="/img/map-img1.png" alt="map">
+                    </div>
+                    <div class="text">
+                        <span>Localização</span>
+                        <span>imperador, 000</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icon">
+                        <img src="/img/map-img2.png" alt="map">
+                    </div>
+                    <div class="text">
+                        <span>Telefone</span>
+                        <span>(91)9 87660757</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icon">
+                        <img src="/img/map-img3.png" alt="map">
+                    </div>
+                    <div class="text">
+                        <span>E-mail</span>
+                        <span>contato@microderme.com</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="icon">
+                        <img src="/img/map-img4.png" alt="map">
+                    </div>
+                    <div class="text">
+                        <span>Horário</span>
+                        <span>Seg. á Sex.: 9AM ás 17PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8416976068447!2d-47.90726352498677!3d-1.2677491987201848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a5a50d137c7a61%3A0xa31c3cc65eeca328!2sTv.%20Acre%2C%20718%20-%20Imperador%2C%20Castanhal%20-%20PA%2C%2068746-415!5e0!3m2!1spt-BR!2sbr!4v1716056356156!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        © Maytech - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
